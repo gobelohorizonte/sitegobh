@@ -2,7 +2,7 @@
 Site da comunidade Go de Belo Horizonte, tecnologias usadas: [Go](https://golang.org/), [Hugo](https://gohugo.io/), [Traefik](https://traefik.io/) e [Docker](https://www.docker.com/).
 
 ## [Traefik](https://traefik.io/)
-É um proxy reverso feito em Go muito potente, possui balanceador de carga, integração com a API do Let's Encrypt](https://letsencrypt.org/) e é muito simples de expor containers Docker.  
+É um proxy reverso feito em Go muito potente, possui balanceador de carga, integração com a API do [Let's Encrypt](https://letsencrypt.org/) e é muito simples de expor containers Docker.  
 
 #### No diretório docker/dev
 `docker-compose up -d`
