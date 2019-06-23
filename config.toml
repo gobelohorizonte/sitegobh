@@ -1,0 +1,52 @@
+# quando estiver no server
+baseURL = "https://gobh.dev/"
+# quando estiver local
+# baseURL = ""
+languageCode = "pt_BR"
+title = "Site da Comunidade Go de BH"
+defaultContentLanguage = "pt"
+theme = "cupper-hugo-theme"
+#googleAnalytics = ""
+#disqusShortname = "yourdiscussshortname"
+enableGitInfo = true
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[imaging]
+  quality = 99
+
+[params]
+  description = "Sua mais nova fonte de pesquisa para conteúdo de Golang [Go BH](https://gobh.dev) ."
+  homeMetaContent = "Comunidade Go BH"
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Digital Ocean](https://m.do.co/c/88c982476b95)."
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "Jan 2, 2006"
+  #codePenUser = "someUser"
+  katex = true
+
+  
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.nav]]
+    name = "Redes Sociais"
+    url = "/redes-sociais/"
+    weight = 3
+  [[menu.nav]]
+    name = "Sobre"
+    url = "/sobre/"
+    weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5

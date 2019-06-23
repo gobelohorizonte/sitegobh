@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  traefik.gobh:
+    image: traefik # The official Traefik docker image
+    restart: always
+    command: --api --docker # Enables the web UI and tells Traefik to listen to docker
+    ports:
+      - "80:80"     # The HTTP port
+      - "443:443"
+      - "8080:8080" # The Web UI (enabled by --api)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+      - ./acme.json:/acme.json

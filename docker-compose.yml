@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  gobh:
+    build:
+      context: .
+    ports:
+      - "8081:80"     # The HTTP port
